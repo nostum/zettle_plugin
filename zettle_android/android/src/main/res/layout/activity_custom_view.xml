@@ -1,0 +1,151 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:navigationIcon="@drawable/baseline_arrow_back_ios_24" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Configuración"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/toolbar_title" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="392dp"
+        android:layout_below="@id/appBarLayout"
+        android:layout_marginTop="50dp"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:id="@+id/authContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Cuenta"
+                android:textColor="#000000"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_below="@id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Para comenzar a aceptar pagos con tarjeta, por favor, inicia sesión con tu cuenta de Zettle."
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnOption1"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewDescription"
+                android:layout_marginTop="25dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/baseline_login_24"
+                android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                android:drawablePadding="8dp"
+                android:gravity="start|center_vertical"
+                android:onClick="onOption1Click"
+                android:paddingLeft="10dp"
+                android:text="Iniciar sesión"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:iconPadding="20dp" />
+            <Button
+                android:id="@+id/btnOption2"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewDescription"
+                android:layout_marginTop="25dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/baseline_logout_24"
+                android:drawablePadding="8dp"
+                android:gravity="start|center_vertical"
+                android:onClick="onOption1Click"
+                android:paddingLeft="10dp"
+                android:text="Cerrar sesión"
+                android:textAllCaps="false"
+                android:textColor="@color/red"
+                android:textSize="16dp"
+                app:iconPadding="20dp" />
+        </RelativeLayout>
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height=".8dp"
+            android:layout_below="@id/authContainer"
+            android:background="#dcdddf" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/authContainer"
+            android:layout_marginTop="40dp"
+            android:text="Hardware"
+            android:textColor="#000000"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnOption3"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_marginTop="25dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/calculator"
+            android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+            android:drawablePadding="12dp"
+            android:gravity="start|center_vertical"
+            android:onClick="onOption3Click"
+            android:paddingLeft="13dp"
+            android:shadowColor="@color/white"
+            android:text="Lectores de tarjetas"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            app:iconPadding="20dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".8dp"
+            android:layout_below="@id/btnOption3"
+            android:background="#dcdddf" />
+
+        <!-- Add other content components if needed -->
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

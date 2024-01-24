@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - iZettleSDK (3.15.1)
+  - zettle_ios (0.0.1):
+    - Flutter
+    - iZettleSDK (= 3.15.1)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - zettle_ios (from `.symlinks/plugins/zettle_ios/ios`)
+
+SPEC REPOS:
+  trunk:
+    - iZettleSDK
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  zettle_ios:
+    :path: ".symlinks/plugins/zettle_ios/ios"
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  iZettleSDK: e19ff6487d2f65ac1b6b818433c1b2844144784a
+  zettle_ios: 45627d5decfd8c446c9302cba3ac2ca93eb1a8fb
+
+PODFILE CHECKSUM: ef19549a9bc3046e7bb7d2fab4d021637c0c58a3
+
+COCOAPODS: 1.10.2

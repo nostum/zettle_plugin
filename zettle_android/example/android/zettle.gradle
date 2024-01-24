@@ -1,0 +1,6 @@
+//    Zettle SDK
+//
+//    githubAccessToken - Personal access token with read rights to github package registry
+
+ext.zettleSDK = [:]
+ext.zettleSDK.githubAccessToken = ""
